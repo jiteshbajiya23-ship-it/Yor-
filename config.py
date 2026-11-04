@@ -58,27 +58,27 @@ PROTECT = True
 # ---------------- Shortener ----------------
 SHORT_URL = os.environ.get("SHORT_URL", "linkshortify.com")
 SHORT_API = os.environ.get("SHORT_API", "")
-SHORT_TUT = os.environ.get("SHORT_TUT", "https://t.me/YourChannel/1")
+SHORT_TUT = os.environ.get("SHORT_TUT", "https://t.me/donghuagalaxy1")
 
 # ---------------- Xiao Bhai Donghua Links (baad me change kar lena) ----------------
 SITE_URL = os.environ.get("SITE_URL", "https://xiaobhaidonghua.com")
-CHANNEL_LINK = os.environ.get("CHANNEL_LINK", "https://t.me/YourChannel")
-PREMIUM_LINK = os.environ.get("PREMIUM_LINK", "https://t.me/YourUsername")   # Premium/VIP kharidne ka link
-OWNER_USERNAME = os.environ.get("OWNER_USERNAME", "YourUsername")            # bina @ ke
-SUPPORT_LINK = os.environ.get("SUPPORT_LINK", "https://t.me/YourUsername")
+CHANNEL_LINK = os.environ.get("CHANNEL_LINK", "https://t.me/donghuagalaxy1")
+PREMIUM_LINK = os.environ.get("PREMIUM_LINK", "https://t.me/xiaooo_bhaibot")   # Premium/VIP kharidne ka link
+OWNER_USERNAME = os.environ.get("OWNER_USERNAME", "xiaooo_bhaibot")            # bina @ ke
+SUPPORT_LINK = os.environ.get("SUPPORT_LINK", "https://t.me/xiaooo_bhaibot")
 
 # ---------------- Messages ----------------
 MESSAGES = {
     "START": (
         "<b>›› ʜᴇʏ {first}, ᴡᴇʟᴄᴏᴍᴇ ᴛᴏ xɪᴀᴏ ʙʜᴀɪ ᴅᴏɴɢʜᴜᴀ 🐉</b>\n"
-        "<blockquote>ᴍᴀɪ ᴅᴏɴɢʜᴜᴀ ᴇᴘɪsᴏᴅᴇs ᴋɪ ғɪʟᴇs sʜᴀʀᴇ ᴋᴀʀᴛᴀ ʜᴜ. "
-        "ᴄʜᴀɴɴᴇʟ ᴘᴇ ᴅɪʏᴀ ɢᴀʏᴀ ʟɪɴᴋ ᴏᴘᴇɴ ᴋᴀʀᴏ ᴀᴜʀ ғɪʟᴇ ᴘᴀᴏ.</blockquote>\n"
+        "<blockquote>ɪ sʜᴀʀᴇ ᴅᴏɴɢʜᴜᴀ ᴇᴘɪsᴏᴅᴇ ғɪʟᴇs. "
+        "ᴏᴘᴇɴ ᴛʜᴇ ʟɪɴᴋ ᴘᴏsᴛᴇᴅ ɪɴ ᴛʜᴇ ᴄʜᴀɴɴᴇʟ ᴛᴏ ɢᴇᴛ ʏᴏᴜʀ ғɪʟᴇ.</blockquote>\n"
         "<b>🌐 ᴡᴇʙsɪᴛᴇ: xiaobhaidonghua.com</b>"
     ),
     "FSUB": (
         "<b><blockquote>›› ʜᴇʏ {first} ×</blockquote>\n"
-        "ᴛᴜᴍʜᴀʀɪ ғɪʟᴇ ʀᴇᴀᴅʏ ʜᴀɪ ‼️ ʙᴀs ᴘᴇʜʟᴇ ɴᴇᴇᴄʜᴇ ᴅɪʏᴇ ɢᴀʏᴇ ᴄʜᴀɴɴᴇʟs ᴊᴏɪɴ ᴋᴀʀᴏ, "
-        "ᴘʜɪʀ <i>ᴛʀʏ ᴀɢᴀɪɴ</i> ᴅᴀʙᴀᴏ.</b>"
+        "ʏᴏᴜʀ ғɪʟᴇ ɪs ʀᴇᴀᴅʏ ‼️ ᴊᴜsᴛ ᴊᴏɪɴ ᴛʜᴇ ᴄʜᴀɴɴᴇʟs ʙᴇʟᴏᴡ ғɪʀsᴛ, "
+        "ᴛʜᴇɴ ᴘʀᴇss <i>ᴛʀʏ ᴀɢᴀɪɴ</i>.</b>"
     ),
     "ABOUT": (
         "<b>›› xɪᴀᴏ ʙʜᴀɪ ᴅᴏɴɢʜᴜᴀ ғɪʟᴇ sᴛᴏʀᴇ\n"
@@ -89,11 +89,11 @@ MESSAGES = {
         "›› ʟɪʙʀᴀʀʏ: <a href='https://docs.pyrogram.org/'>Pʏʀᴏɢʀᴀᴍ</a>\n"
         "›› ᴅᴀᴛᴀʙᴀsᴇ: <a href='https://www.mongodb.com/docs/'>Mᴏɴɢᴏ ᴅʙ</a></b></blockquote>"
     ),
-    "REPLY": "<b>Donghua ke liye join karo - " + CHANNEL_LINK + "</b>",
+    "REPLY": "<b>Join our channel for donghua - " + CHANNEL_LINK + "</b>",
     "SHORT_MSG": (
         "<b>📊 ʜᴇʏ {first},\n\n"
-        "‼️ ᴀᴘɴɪ ᴅᴏɴɢʜᴜᴀ ᴇᴘɪsᴏᴅᴇ ᴋɪ ғɪʟᴇ ʟᴇɴᴇ ᴋᴇ ʟɪʏᴇ ʟɪɴᴋ ᴏᴘᴇɴ ᴋᴀʀᴏ ‼️\n\n"
-        "⌯ ʟɪɴᴋ ʀᴇᴀᴅʏ ʜᴀɪ, ɴᴇᴇᴄʜᴇ <i>ᴏᴘᴇɴ ʟɪɴᴋ</i> ʙᴜᴛᴛᴏɴ ᴅᴀʙᴀᴏ..</b>"
+        "‼️ ᴏᴘᴇɴ ᴛʜᴇ ʟɪɴᴋ ᴛᴏ ɢᴇᴛ ʏᴏᴜʀ ᴅᴏɴɢʜᴜᴀ ᴇᴘɪsᴏᴅᴇ ғɪʟᴇ ‼️\n\n"
+        "⌯ ʏᴏᴜʀ ʟɪɴᴋ ɪs ʀᴇᴀᴅʏ, ᴘʀᴇss ᴛʜᴇ <i>ᴏᴘᴇɴ ʟɪɴᴋ</i> ʙᴜᴛᴛᴏɴ ʙᴇʟᴏᴡ..</b>"
     ),
     "START_PHOTO": "https://imgyx.pages.dev/e0guF",
     "FSUB_PHOTO": "https://imgyx.pages.dev/VLrIH",
