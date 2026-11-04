@@ -1,0 +1,45 @@
+services:
+  - type: web
+    name: xiaobhai-filestore
+    runtime: python
+    plan: free
+    buildCommand: pip install -r requirements.txt
+    startCommand: python3 main.py
+    healthCheckPath: /health
+    envVars:
+      - key: PYTHON_VERSION
+        value: 3.11.9
+      - key: BOT_TOKEN
+        sync: false
+      - key: API_ID
+        sync: false
+      - key: API_HASH
+        sync: false
+      - key: DB_URI
+        sync: false
+      - key: DB_NAME
+        value: xiaobhai_filestore
+      - key: DB_CHANNEL
+        sync: false
+      - key: FSUBS
+        sync: false
+      - key: OWNER_ID
+        sync: false
+      - key: ADMINS
+        sync: false
+      - key: SHORT_URL
+        value: linkshortify.com
+      - key: SHORT_API
+        sync: false
+      - key: SHORT_TUT
+        sync: false
+      - key: SITE_URL
+        value: https://xiaobhaidonghua.com
+      - key: CHANNEL_LINK
+        sync: false
+      - key: PREMIUM_LINK
+        sync: false
+      - key: OWNER_USERNAME
+        sync: false
+      - key: SUPPORT_LINK
+        sync: false
